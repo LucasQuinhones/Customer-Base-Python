@@ -405,6 +405,7 @@ def removeCliente():
         for chave, cliente in enumerate(usuarios):
             if usuarioDigitado == cliente.nome:
                 usuarios.pop(chave)
+                enderecos.pop(chave)
                 validaRemovido = True
             else:
                 pass
@@ -414,7 +415,6 @@ def removeCliente():
             print(' \n Cliente não encontrado no sistema.\n')
     else:
         print(' Ainda não possui clientes cadastrados')
-
 
 while True:
     escolha = input(menu)
