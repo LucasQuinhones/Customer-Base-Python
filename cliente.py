@@ -3,15 +3,11 @@ class Cliente:
         self.nome = nome
         self.telefone = telefone
         self.email = email
-        self.endereco = None
 
-    # def setEndereco(self, cep, rua, numero, complemento, bairro, cidade, estado):
-    #     self.endereco = Endereco(
-    #         cep, rua, numero, complemento, bairro, cidade, estado)
-
-    # def mostraDadosClientes(self):
-    #     return print(f'Nome: {self.nome}, Telefone: {self.telefone}, Email: {self.email}')
-
+    def alteraDados(self, nomeNovo, telefoneNovo, emailNovo):
+        self.nome = nomeNovo
+        self.telefone = telefoneNovo
+        self.email = emailNovo
 
 class PessoaFisica(Cliente):
     def __init__(self, nome, telefone, email, cpf):
@@ -43,4 +39,4 @@ class Endereco:
         self.estado = estado
 
     def mostraEndereco(self):
-        return print(f' Endereço: CEP: {self.cep}, Rua: {self.rua}, Número: {self.numero}, Complemento: {self.complemento}, Bairro: {self.bairro}, Cidade: {self.cidade}, Estado: {self.estado}')
+        return print(f'    Endereço: CEP: {self.cep}, Rua: {self.rua}, Número: {self.numero}, Complemento: {self.complemento}, Bairro: {self.bairro}, Cidade: {self.cidade}, Estado: {self.estado}')

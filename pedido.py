@@ -9,4 +9,4 @@ class Pedido:
         self.status = status 
 
     def consultarPedidos(self):
-        print(f"Pedido: {self.codigo} \nCliente: {self.cliente} \nStatus: {self.status} \nDescrição: {self.descricao}")
+        print(f" Pedido: {self.codigo} \n Cliente: {self.cliente} \n Status: {self.status} \n Descrição: {self.descricao}")
